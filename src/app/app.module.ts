@@ -1,22 +1,15 @@
+import { AppRoutingModule } from './app-routing.module';
+import { TestComponent } from './test/test.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { RandomComponent } from './random/random.component';
-import { TestModule } from './test/test.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    RandomComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    TestModule
-  ],
+  imports: [BrowserModule, ReactiveFormsModule, RouterModule, AppRoutingModule],
+  declarations: [AppComponent, TestComponent],
+  bootstrap: [AppComponent],
   providers: [],
-  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
