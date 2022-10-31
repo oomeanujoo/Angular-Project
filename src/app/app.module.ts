@@ -1,3 +1,4 @@
+import { NavComponent } from './nav/nav.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TestComponent } from './test/test.component';
 import { NgModule } from '@angular/core';
@@ -8,7 +9,7 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   imports: [BrowserModule, ReactiveFormsModule, RouterModule, AppRoutingModule],
-  declarations: [AppComponent, TestComponent],
+  declarations: [AppComponent, TestComponent, NavComponent],
   bootstrap: [AppComponent],
   providers: [],
 })
