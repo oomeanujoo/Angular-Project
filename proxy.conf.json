@@ -1,0 +1,20 @@
+{
+  "/com.eibus.web.soap.Gateway.wcp": {
+    "target": "https://128.199.27.29:8443/home/AdnateDev",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": false
+  },
+  "/com.eibus.sso.web.authentication.PreLoginInfo.wcp": {
+    "target": "https://128.199.27.29:8443/home/AdnateDev/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": false
+  },
+  "/cordys/": {
+    "target": "https://128.199.27.29:8443/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": false
+  }
+}

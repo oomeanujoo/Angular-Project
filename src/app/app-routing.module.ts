@@ -5,9 +5,19 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: NavComponent },
-  { path: '', component: HomeComponent },
-  { path: 'test', component: TestComponent },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
+    path: 'test',
+    component: TestComponent,
+  },
 ];
 
 @NgModule({
