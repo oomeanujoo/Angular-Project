@@ -1,18 +1,18 @@
 {
   "/com.eibus.web.soap.Gateway.wcp": {
-    "target": "https://128.199.27.29:8443/home/AdnateDev",
+    "target": "http://10.100.3.5:8181/home/REEL/",
     "secure": false,
     "logLevel": "debug",
     "changeOrigin": false
   },
   "/com.eibus.sso.web.authentication.PreLoginInfo.wcp": {
-    "target": "https://128.199.27.29:8443/home/AdnateDev/",
+    "target": "http://10.100.3.5:8181/home/REEL/",
     "secure": false,
     "logLevel": "debug",
     "changeOrigin": false
   },
   "/cordys/": {
-    "target": "https://128.199.27.29:8443/",
+    "target": "http://10.100.3.5:8181/",
     "secure": false,
     "logLevel": "debug",
     "changeOrigin": false

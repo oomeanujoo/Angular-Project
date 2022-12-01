@@ -1,3 +1,55 @@
-<div class="jumbotron">
-  <h1 class="display-4">Welcome! Here we go with Angular Experiments</h1>
-</div>
+<section class="pb-4">
+    <section class="w-100 p-4 d-flex justify-content-center pb-4">
+      <div style="width: 26rem">
+        <div class="tab-content">
+          <div
+            class="tab-pane fade show active"
+            id="pills-login"
+            role="tabpanel"
+            aria-labelledby="tab-login"
+          >
+            <div class="form-outline mb-4">
+              <label class="form-label" for="loginName" style="margin-left: 0px"
+                >Username</label
+              >
+              <input
+                type="text"
+                id="loginName"
+                class="form-control"
+                [(ngModel)]="data.user"
+              />
+ 
+            </div>
+
+            <div class="form-outline mb-2">
+              <label
+                class="form-label"
+                for="loginPassword"
+                style="margin-left: 0px"
+                >Password</label
+              >
+              <input
+                type="password"
+                id="loginPassword"
+                class="form-control"
+                [(ngModel)]="data.pass"
+              />
+
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-md-6 d-flex justify-content-center"></div>
+            </div>
+
+            <button
+              (click)="login()"
+              type="submit"
+              class="btn btn-primary btn-block mb-4"
+            >
+              Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+</section>
